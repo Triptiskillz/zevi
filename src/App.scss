@@ -111,6 +111,12 @@
       border-radius: 4px;
       font-family: arial;
 
+      &:hover {
+        button {
+          opacity: 1;
+        }
+      }
+
       i {
         color: #04AA6D;
         float: right;
@@ -151,11 +157,7 @@
         }
       }
 
-      &:hover {
-        button {
-          opacity: 1;
-        }
-      }
+
     }
   }
 }
