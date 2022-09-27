@@ -1,0 +1,161 @@
+.App {
+  font-family: sans-serif;
+
+}
+
+.search-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .search-inner {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.105) 0px 2px 8px 0px;
+    padding: 10px;
+    display: flex;
+
+    input {
+      border: none;
+      width: 95%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 17px;
+    }
+
+    i {
+      color: rgb(69, 69, 69);
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+
+  .dropdown {
+    background-color: white;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: rgba(99, 99, 99, 0.055) 0px 2px 8px 0px;
+
+    :empty {
+      border: none;
+    }
+
+    .dropdown-row {
+      cursor: pointer;
+      text-align: start;
+      margin: 2px 0;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+
+      .fa {
+        color: rgb(46, 45, 45);
+
+        &:hover {
+          color: red;
+        }
+      }
+
+      .overlay {
+        color: #000;
+        transition: .2s ease;
+        opacity: 0;
+        font-size: 17px;
+        text-align: center;
+
+        .btn {
+          border: 2px solid black;
+          background-color: white;
+          color: black;
+          padding: 5px 22px;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 22px;
+          border-color: #04AA6D;
+          color: green;
+
+          &:hover {
+            background-color: #04AA6D;
+            color: white;
+          }
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 300px;
+      margin-top: 10px;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 4px;
+      font-family: arial;
+
+      i {
+        color: #04AA6D;
+        float: right;
+        font-size: 22px;
+
+        &:hover {
+          color: red;
+        }
+      }
+
+      .title {
+        color: grey;
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        border: 2px solid #04AA6D;
+        color: green;
+        background-color: transparent;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 22px;
+        opacity: 0;
+        font-size: 18px;
+
+        &:hover {
+          background-color: #04AA6D;
+          color: white;
+        }
+      }
+
+      &:hover {
+        button {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
